@@ -481,6 +481,31 @@ mark,
   height: auto;
 }
 
+.img-fluid1 {
+  width: 750px;
+  height: 450px;
+}
+
+.img-fluid2 {
+  width: 750px;
+  height: 450px;
+}
+
+.img-fluid3 {
+  width: 750px;
+  height: 450px;
+}
+
+.img-fluid5 {
+  width: 1000px;
+  height: 500px;
+}
+
+.img-fluid6 {
+  width: 100px;
+  height: 70px;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
