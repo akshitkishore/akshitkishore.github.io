@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Landing page template built with HTML and Bootstrap 4 for presenting training courses, classes, workshops and for convincing visitors to register using the form.">
-    <meta name="author" content="Inovatik">
+    <meta name="description" content="Do you feel like you're doing a lot of guess work when it comes to DropShipping? Take our DropShipping course to change that">
+    <meta name="author" content="My Digidreamz">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:site_name" content="Masters of Dropshipping" /> <!-- website name -->
+	<meta property="og:site" content="mastersofdropship.com" /> <!-- website link -->
+	<meta property="og:title" content="Masters of DropShipping"/> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
@@ -90,9 +90,9 @@
 
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
+                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">LINKS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                        
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
                         <div class="dropdown-divider"></div>
@@ -101,9 +101,7 @@
                 </li>
                 <!-- end of dropdown menu -->
 
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                </li>
+                
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
@@ -131,10 +129,38 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <div class="countdown">
-                            <span id="clock"></span>
-                        </div>
-                        <h1>Masters of DropShipping</h1>
+                        <style> 
+                            .countdown { 
+                                font-size: 36px; /* Increased font size */ 
+                                font-weight: bold; 
+                                color: #FF0000; 
+                                text-align: center; 
+                                margin: 20px; 
+                            } 
+                        </style>
+                        
+                        <div class="countdown" id="countdown"></div> 
+                            <script> 
+                            // Set the date and time for the countdown 
+                            var countDownDate = new Date("Dec 31, 2024 23:59:00").getTime(); 
+                            // Update the countdown every 1 second 
+                            var x = setInterval(function() { var now = new Date().getTime(); 
+                                    var distance = countDownDate - now;
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24)); 
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000); 
+                                    
+                                    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "; 
+                                    if (distance < 0) { 
+                                        clearInterval(x); 
+                                        document.getElementById("countdown").innerHTML = "EXPIRED"; 
+                                    } 
+                                }, 1000); 
+                            </script>
+                        <h2>Unlock Financial Freedom: Join Our Free Dropshipping Course and Community Today</h2>
+                        <h3>INTRODUCING</h3>
+                        <h3>Masters of DropShipping</h3>
                         <p class="p-large">Do you feel like you're doing a lot of guess work when it comes to DropShipping? Take our DropShipping course to change that</p>
                         <p class="p-large">Build a profitable bussiness without the need of an Inventory</p>
                         <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
@@ -152,19 +178,19 @@
                         
                         <!-- Slide -->
                         <div class="swiper-slide" >
-                            <img class="img-fluid" src="images/details-slide-1.jpg" alt="alternative">
+                            <img class="img-fluid1" src="images/details-slide-1.jpg" alt="alternative">
                         </div>
                         <!-- end of slide -->
 
                         <!-- Slide -->
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="images/details-slide-2.jpg" alt="alternative">
+                            <img class="img-fluid2" src="images/details-slide-2.jpg" alt="alternative">
                         </div>
                         <!-- end of slide -->
 
                         <!-- Slide -->
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="images/details-slide-3.jpg" alt="alternative">
+                            <img class="img-fluid3" src="images/details-slide-3.jpg" alt="alternative">
                         </div>
                         <!-- end of slide -->
 
@@ -210,44 +236,77 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
 
-                    <!-- Registration Form -->
-                    <div class="form-container">
-                        <form id="registrationForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Complete name</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email address</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                                <label class="label-control" for="rphone">Phone number</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I've read and agree to ECom Prodigy's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">REGISTER</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                    </div> <!-- end of form-container -->
-                    <!-- end of registration form -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
-    <!-- end of registration -->
+                   <!-- Registration Form -->
 
+                   <div class="adbox">
+                    <h2>Here is what you get</h2>
+                        <ul class="custom-bullets">
+                            <li>Expert Guidance Every Step of the Way</li>
+                            <li>Shopify Mastery</li>
+                            <li>Step-by-Step Store Launch</li>
+                            <li>Powerful E-Marketing Techniques</li>
+                        </ul>
+                   
+                    
+
+                </div>
+
+                    <div class="offer-box">
+                        
+                        <style> 
+                            .countdown1 { 
+                                font-size: 30px; /* Increased font size */ 
+                                font-weight: bold; 
+                                color: #FF0000; 
+                                text-align: center; 
+                                margin: 2px; 
+                            } 
+                        </style>
+                        
+                        <div class="countdown1" id="countdown1"> 
+                            <script> 
+                            // Set the date and time for the countdown 
+                            var countDownDate = new Date("Dec 31, 2024 23:59:00").getTime(); 
+                            // Update the countdown every 1 second 
+                            var x = setInterval(function() { var now = new Date().getTime(); 
+                                    var distance = countDownDate - now;
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24)); 
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000); 
+                                    
+                                    document.getElementById("countdown1").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "; 
+                                    if (distance < 0) { 
+                                        clearInterval(x); 
+                                        document.getElementById("countdown1").innerHTML = "EXPIRED"; 
+                                    } 
+                                }, 1000); 
+                            </script>
+                        </div>
+                        <h2>Special Offer!</h2>
+                        <p>Hurry up! Limited time only.</p>
+                    </div>
+                </div>
+                
+                <script> function goToLink() { window.location.href = "https://mastersofdropship.com/appointment"; // Replace with your desired URL 
+                                                } 
+                    </script>
+                <div class="form-group">
+                    <button type="submit" class="form-control-submit-button" onclick="goToLink()">CLICK HERE TO REGISTER</button>
+                </div>
+                
+                <div class="form-message">
+                    <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                </div>
+            </form>
+        </div> <!-- end of form-container -->
+        <!-- end of registration form -->
+        
+    </div> <!-- end of col -->
+</div> <!-- end of row -->
+</div> <!-- end of container -->
+</div> <!-- end of form-1 -->
+<!-- end of registration -->
 
     <!-- Partners -->
     <div class="slider-1">
@@ -295,13 +354,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="images/instructor.jpg" alt="alternative">
+                    <img class="img-fluid" src="images/instructor.jpg" alt="HARRY">
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>I’m Garry Your Trainer</h2>
-                        <p>Hi everybody! I am Garry and I will be your main instructor durnig the SEO training course. I have more than 10 years experience in SEO and I am very passionate about this field. Register for the course and let's meet.</p>
-                        <p>Teaching students all about the beste SEO techniques is something I love to do as a full-time job</p>
+                        <h2>I’m Harry Your Trainer</h2>
+                        <p>Hi there, I'm Harry, your dropshipping trainer. I've been in the e-commerce game for over a decade, and I'm here to help you start your own successful dropshipping business without the hassle of managing inventory. Dropshipping is a fantastic way to earn money online because you don't need to worry about stocking products or handling shipping. Instead, you focus on marketing and selling products, while your suppliers take care of the rest.</p>
+                        <p>By the end of this course, you'll have all the tools and knowledge you need to run a successful dropshipping business. So, are you ready to take the plunge and start your journey to financial freedom? Let's get started!</p>
+
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -381,13 +441,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Who Should Attend The SEO Training Course</h2>
-                        <p>This course is for anyone passionate about the web and especially fit for those seeking to improve their online presence for company websites and blogs </p>
+                        <h2>Who Should Attend The Masters Of DropShipping Course</h2>
+                        <p>Whether you're a beginner or have some experience, this course will provide you with the knowledge and skills needed to succeed in the dropshipping business. </p>
                         <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">LIGHTBOX</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="images/students.jpg" alt="alternative">
+                    <img class="img-fluid" src="images/students.png" alt="alternative">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -406,28 +466,28 @@
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
-                    <h3>SEO Training Course</h3>
+                    <h3>Masters Of Dropshipping Course</h3>
                     <hr>
                     <h5>For everybody</h5>
-                    <p>The training course is dedicates to anyone passionate about the web and in need of improving their current online presence.</p>
+                    <p>The training course is dedicates to anyone passionate about the Dropshipping bussiness and in need of improving their current financial status.</p>
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Link building framework</div>
+                            <i class="fas fa-square"></i><div class="media-body">Mastering E-Commerce Platform</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Know your current position</div>
+                            <i class="fas fa-square"></i><div class="media-body">Supplier Management</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Partnering with blogs</div>
+                            <i class="fas fa-square"></i><div class="media-body">Marketing Strategies</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Naming your images</div>
+                            <i class="fas fa-square"></i><div class="media-body">Customer Service Excellence</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Creating good sitemaps</div>
+                            <i class="fas fa-square"></i><div class="media-body">Financial Management</div>
                         </li>
                         <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Writing for humans</div>
+                            <i class="fas fa-square"></i><div class="media-body">Scaling Your Bussiness</div>
                         </li>
                     </ul>
                     <a class="btn-solid-reg mfp-close page-scroll" href="#register">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
@@ -449,7 +509,7 @@
                     <div class="image-container">
                         <div class="video-wrapper">
                             <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                <img class="img-fluid" src="images/video.jpg" alt="alternative">
+                                <img class="img-fluid5" src="images/video.png" alt="alternative">
                                 <span class="video-play-button">
                                     <span></span>
                                 </span>
@@ -573,7 +633,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-1.jpg" alt="alternative">
+                                        <img class="img-fluid6" src="images/testimonial-1.jpg" alt="alternative">
                                     </div> <!-- end of image-wrapper -->
                                     <div class="text-wrapper">
                                         <div class="testimonial-text">The marketing strategies taught in this course are top-notch. I've seen a significant increase in traffic and sales since implementing them. Worth every penny!</div>
@@ -585,7 +645,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-2.jpg" alt="alternative">
+                                        <img class="img-fluid6" src="images/testimonial-2.jpg" alt="alternative">
                                     </div> <!-- end of image-wrapper -->
                                     <div class="text-wrapper">
                                         <div class="testimonial-text">I loved the flexibility of this course. Being able to learn at my own pace and access the materials anytime was a huge plus. The financial management section was particularly helpful.</div>
@@ -597,7 +657,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-3.jpg" alt="alternative">
+                                        <img class="img-fluid6" src="images/testimonial-3.jpg" alt="alternative">
                                     </div> <!-- end of image-wrapper -->
                                     <div class="text-wrapper">
                                         <div class="testimonial-text">I was skeptical at first, but this course exceeded my expectations. The community support and practical tips were invaluable. I'm now running a successful dropshipping business!</div>
@@ -609,7 +669,7 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-4.jpg" alt="alternative">
+                                        <img class="img-fluid6" src="images/testimonial-4.jpg" alt="alternative">
                                     </div> <!-- end of image-wrapper -->
                                     <div class="text-wrapper">
                                         <div class="testimonial-text">I recently completed Masters of Dropshipping, and it’s one of the most comprehensive and beginner-friendly dropshipping courses I’ve taken. The content was easy to follow, covering everything from setting up a Shopify store to advanced Facebook ads strategies.</div>
@@ -650,142 +710,7 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-5 -->
-    <!-- end of date -->
-
-
-    <!-- Newsletter -->
-    <div class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>Stay updated with news by subscribing to our newsletter and our social channels</h3>
-                    
-                    <!-- Newsletter Form -->
-                    <form id="newsletterForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="nemail" required>
-                            <label class="label-control" for="nemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to Corso's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SIGN UP</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of newsletter form -->
-
-                    <!-- Social Links -->
-                    <div class="icon-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of icon-container -->
-                    <!-- end of social icons -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of newsletter -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Contact Details</h2>
-                        <p>For registration questions please get in touch using the contact details below. For any questions use the form.</p>
-                        <h3>Main Office Location</h3>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">22 Innovative, San Francisco, CA 94043, US</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-mobile-alt"></i>
-                                <div class="media-body">+44 68 554 332, &nbsp;&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp; +44 31 276 112</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="light-gray" href="mailto:contact@zigo.com">contact@zigo.com</a> <i class="fas fa-globe"></i><a class="light-gray" href="#your-link">www.zigo.com</a></div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Corso's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-3 -->
-    <!-- end of contact -->
-
-
+   
     <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -815,25 +740,7 @@
                         </ul>
                     </div>
                 </div> <!-- end of col -->
-                <div class="col-md-3">
-                    <div class="footer-col third">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div> <!-- end of col -->
+                
                 <div class="col-md-3">
                     <div class="footer-col fourth">
                         <h5>Social Media</h5>
